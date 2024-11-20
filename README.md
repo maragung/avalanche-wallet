@@ -109,3 +109,11 @@ By default, there are two network options to connect to: `Mainnet` and `Fuji`.
 -   Avalanche API: `https://api.avax-test.network:443`
 -   Explorer API: `https://explorerapi.avax-test.network`
 
+##### Manual Install
+```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm install 16
+nvm use 16
+npm install --save-dev node-gyp --legacy-peer-deps
+npm install --legacy-peer-deps
+npm run build```
